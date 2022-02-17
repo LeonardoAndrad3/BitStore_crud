@@ -1,0 +1,32 @@
+.paginacaoTipo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+@media(max-width: 500px){
+    .paginacaoTipo h2{
+        font-size: 20px;
+    }
+    .paginacaoCrud input{
+        font-size: 14px;
+    }
+}
+@media(max-width: 280px){
+    .paginacaoTipo h2{
+        font-size: 17px;
+    }
+    .paginacaoCrud input{
+        font-size: 11px;
+        margin-right: 5px;
+    }
+}
+@media(max-width: 210px){
+    .paginacaoTipo h2{
+        font-size: 17px;
+    }
+    .paginacaoCrud input{
+       display: block;
+    }
+}

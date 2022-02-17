@@ -1,0 +1,80 @@
+.main{
+    min-height: 700px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-segund);
+    text-align: center;
+}
+.main h1{
+    font-size: 50px;
+    font-weight: 200;
+    
+}
+.icon1{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    min-width: 30px;
+    max-width: 250px;
+    min-height: 30px;
+    max-height: 250px;
+    position: relative;
+    animation: icon 2s;
+    animation-fill-mode: forwards;
+}
+.icon2{
+    height: 100vh;
+    width: 100vw;
+    min-width: 30px;
+    max-width: 150px;
+    min-height: 30px;
+    max-height: 156px;
+}
+.searchPage{
+    margin: 20px;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+Button[type="submit"]{
+    margin: 0 0 10px 0;
+}
+.buttonTag{
+    position: relative;
+    animation: button 1.5s;
+    animation-fill-mode: forwards;
+}
+.buttonProd{
+    position: relative;
+    animation: button 1s;
+    animation-fill-mode: forwards;
+}
+.searchPage h2{
+    text-align: center;
+    font-size: 36px;
+    color: var(--color-h2)
+}
+
+@keyframes icon {
+    from {left: 200px;}
+    to {left: 0;}
+}
+@keyframes button{
+    from {top: 500px}
+    to {top:0}
+}
+
+@media(max-width: 350px){
+    .searchPage h2{
+        font-size: 24px;
+    }
+}
+@media(max-width: 450px){
+    .icon2{
+        display: none;
+    }
+}

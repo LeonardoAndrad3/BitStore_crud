@@ -1,0 +1,39 @@
+.delete{
+    margin: 10px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: auto;
+    width: 90vw;
+
+}
+.delete h2{
+    color: var(--color-h2);
+    font-size: 28px;
+    font-weight: 500;
+}
+.formDelete{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+    height: auto;
+    width: 80%;
+}
+.formDelete div{
+    font-size: 14px;
+}
+
+input[type="submit"]:disabled{
+    background-color: rgba(170, 170, 170, 0.282);
+}
+input[type="checkbox"]{
+    margin-left: 5px;
+}
+
+@media(max-width: 250px){
+    .delete h2{
+        font-size: 22px;
+    }
+}

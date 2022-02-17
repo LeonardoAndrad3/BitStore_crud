@@ -18,4 +18,4 @@ npm start
 
 ## Agradecimentos
 
-- Aproveita a plataforma, espero que seja agradável e simples. Obrigado e um abraço!
+- Aproveite a plataforma, espero que seja agradável e simples. Obrigado e um abraço!

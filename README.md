@@ -4,8 +4,10 @@
 
 ## Configuração de setup
 
-- Clona o repositório no lugar que preferir;
-- Instale as dependências:
+- Projeto feito com servidor xampp;
+- Necessário clonar repositório na raiz htdocs do xampp;
+- Iniciar servidores xampp;
+- Instale as dependências do frontend:
 ```bash
 npm install
 ```
@@ -13,8 +15,6 @@ npm install
 ```bash
 npm start
 ```
-
-- Não se preocupe com banco de dados ou as requisições com o mesmo, pois estão em nuvem.
 
 ## Agradecimentos
 

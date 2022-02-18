@@ -8,8 +8,11 @@
 - Necessário clonar repositório na raiz htdocs do xampp;
 - Iniciar servidores xampp;
 - Caso queira as tabelas e dados: 
+[product.txt](https://github.com/LeonardoAndrad3/BitStore_crud/files/8097400/product.txt)
+
+⚠️ **Atenção**: Para que a aplicação funcione corretamente, verifique as conexões com o banco de dados:
 ```
-https://github.com/LeonardoAndrad3/BitStore_crud/files/8093293/product.txt
+backend/ControllerDB.php
 ```
 - Instale as dependências do frontend:
 ```bash

@@ -7,6 +7,10 @@
 - Projeto feito com servidor xampp;
 - Necessário clonar repositório na raiz htdocs do xampp;
 - Iniciar servidores xampp;
+- Caso queira as tabelas e dados: 
+```
+[product.txt](https://github.com/LeonardoAndrad3/BitStore_crud/files/8093293/product.txt)
+```
 - Instale as dependências do frontend:
 ```bash
 npm install

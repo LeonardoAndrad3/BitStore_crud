@@ -3,10 +3,10 @@
 // Conexão com o banco de dados
 class ControllerDB{
 
-    private $user = "id18441845_mysql_bitstore_teste";
+    private $user = "root";
     private $host = "localhost";
     private $password = "";
-    private $database = "id18441845_bitstore";
+    private $database = "bitstore";
     private $conn;
 
     function __construct(){

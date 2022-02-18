@@ -3,12 +3,12 @@ include_once("ControllerDB.php");
 
     header('Access-Control-Allow-Origin:*');
     header('Access-Control-Allow-Headers:*');
+
     $db = new ControllerDB();
     
-    $response = [];
-
     $resultFront = file_get_contents("php://input");
     $dados = json_decode($resultFront,true);
+    $response = [];
 
     if($dados["deleteProduct"] !== ""){
         $db->connect();

@@ -11,7 +11,6 @@ include_once("ControllerDB.php");
 
     $responseType = file_get_contents("php://input");
     $dados = json_decode($responseType, true);  
-
     $query= sprintf("select * from `%s` order by id asc", $dados['type']);
     $result = mysqli_query($conn, $query);
     while($row = mysqli_fetch_array($result)){

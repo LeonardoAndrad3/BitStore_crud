@@ -23,12 +23,11 @@ export function Read(props:any){
             if(!estado){
                 setReadAssoc(res.data[res.data.length - 1].assoc)
             }          
-        }).catch(()=>{
+        }).catch((e)=>{
+            console.log(e)
             alert("Produtos não encontrados");  
         })
     }, [setReadProd]);
-
-    
 
     return(
         <>

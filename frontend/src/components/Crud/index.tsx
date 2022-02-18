@@ -25,7 +25,7 @@ export function Crud(props:any){
             <div id="crud" className='crud'>
                 
             </div>
-
+            
             <a href={BASE_URL_RELATORIO}> <Button> Gerar relatório </Button> </a>
             </div>
         </>

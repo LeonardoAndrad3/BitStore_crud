@@ -2,7 +2,7 @@
 require_once './vendor/autoload.php';
 use Dompdf\Dompdf;
 
-$pdo = new PDO('mysql:host=localhost; dbname=test','root','');
+$pdo = new PDO('mysql:host=localhost; dbname=bitstore','root','');
 
 $sql = $pdo->query('select tag.id as tagId, tag.name as tagName, product_tag.product_id, product.id as productId, product.name as productName from `tag` inner join `product_tag` ON tag.id=product_tag.tag_id INNER JOIN `product` ON product.id=product_tag.product_id order by product.id asc');
 $html ="<h1 style=text-align:center >Relatório de relevância</h1>";

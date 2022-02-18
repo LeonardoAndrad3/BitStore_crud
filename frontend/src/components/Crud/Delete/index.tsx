@@ -19,6 +19,7 @@ export function Delete(props:any){
 
 
     const formDelete = async (e:any)=> {
+
         e.preventDefault()
         axios.post(`${BASE_URL}Delete.php`, deletar)
         .then((e)=>{

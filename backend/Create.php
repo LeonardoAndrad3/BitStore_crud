@@ -51,6 +51,7 @@ include_once("ControllerDB.php");
             ];
         }
     } else{
+        $conn = $db->getConn(); 
         $response[] = [
             "mensagem"=> "Dados não encontrados",
             "rows"=> mysqli_affected_rows($conn),

@@ -1,10 +1,15 @@
 <?php
 require_once './vendor/autoload.php';
+require_once './ControllerDB.php';
 use Dompdf\Dompdf;
 
-$pdo = new PDO('mysql:host=localhost; dbname=bitstore','root','');
+//primeiro contato com PDO
 
-$sql = $pdo->query('select tag.id as tagId, tag.name as tagName, product_tag.product_id, product.id as productId, product.name as productName from `tag` inner join `product_tag` ON tag.id=product_tag.tag_id INNER JOIN `product` ON product.id=product_tag.product_id order by product.id asc');
+$db = new ControllerDB();
+$conn = $db->getConn();
+
+$result = mysqli_query($conn, 'select tag.id as tagId, tag.name as tagName, product_tag.product_id, product.id as productId, product.name as productName from `tag` inner join `product_tag` ON tag.id=product_tag.tag_id INNER JOIN `product` ON product.id=product_tag.product_id order by product.id asc');
+
 $html ="<h1 style=text-align:center >Relatório de relevância</h1>";
 $html .= '<table border=1 width=100%>';
 $html .= '<thead>';
@@ -16,7 +21,7 @@ $html .= "<td> ProductName </td>";
 $html .= "</tr>";
 $html .= "</thead>";
 
-while($linha = $sql->fetch(PDO::FETCH_ASSOC)){
+while($linha = mysqli_fetch_assoc($result)){
     $html .= "<tbody>";
     $html .= "<tr><td>".$linha['tagId']."</td><td> ". $linha['tagName']."</td><td> ". $linha['productId']."</td><td>". $linha['productName']."</td></tr>";
 

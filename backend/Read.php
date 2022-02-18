@@ -2,7 +2,7 @@
 include_once("ControllerDB.php");
 
     header('Access-Control-Allow-Origin:*');
-    header('Access-Control-Allow-Headers:*');
+    header('Access-Control-Allow-Headers: *');
 
     $db = new ControllerDB();
     $db->connect();

@@ -24,7 +24,6 @@ export function Read(props:any){
                 setReadAssoc(res.data[res.data.length - 1].assoc)
             }          
         }).catch((e)=>{
-            console.log(e)
             alert("Produtos não encontrados");  
         })
     }, [setReadProd]);
